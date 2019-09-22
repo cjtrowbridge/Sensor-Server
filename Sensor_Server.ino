@@ -6,7 +6,7 @@
 #include <DallasTemperature.h>
 
 #ifndef STASSID
-#define STASSID "Your Wifi SSId"
+#define STASSID "Your Wifi SSID"
 #define STAPSK  "Your Wifi Password"
 #endif
 
@@ -15,7 +15,7 @@ const char* password = STAPSK;
 
 ESP8266WebServer server(80);
 
-// Data wire is plugged into port 2 on the Arduino
+// Data wire is plugged into port 2 on the NodeMCU v3 Arduino. The IO numbers do not line up correctly to the Pins on the board.
 #define ONE_WIRE_BUS 4
 #define TEMPERATURE_PRECISION 9
 
